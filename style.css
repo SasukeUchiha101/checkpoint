@@ -1,0 +1,52 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+}
+
+.cart {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quantity-control {
+    display: flex;
+    background-color: red;
+    align-items: center;
+}
+
+.quantity-control button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.quantity {
+    margin: 0 10px;
+}
+
+.remove-item,
+.like-item {
+    cursor: pointer;
+}
+
+.like-item.liked {
+    color: rgba(0, 136, 255, 0.384);
+}
+
+.total-price {
+    font-weight: bold;
+    text-align: right;
+}

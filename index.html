@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minutes to Seconds Converter</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="java.js">
+<body>
+    <script>
+        function minutesToSeconds(minutes) {
+            if (typeof minutes !== 'number' || !Number.isInteger(minutes)) {
+                throw new Error('Input must be an integer.');
+            }
+            return minutes * 60;
+        }
+
+        // Example usage:
+        console.log(minutesToSeconds(5));  // Output: 300
+        console.log(minutesToSeconds(10)); // Output: 600
+
+    </script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+        <div class="cart">
+            <div class="cart-item">
+                <p class="item-name">Item 1</p>
+                <div class="quantity-control">
+                    <button class="minus">-</button>
+                    <span class="quantity">1</span>
+                    <button class="plus">+</button>
+                </div>
+                <p class="item-price" data-price="20">20 €</p>
+                <button class="remove-item">Remove</button>
+                <button class="like-item">❤️</button>
+            </div>
+            <!-- Repeat .cart-item for more items -->
+            <div class="total-price">
+                Total: <span id="total">20</span> €
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    
+    
+</body>
+</html>
